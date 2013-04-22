@@ -7,7 +7,7 @@ require("naughty")
 
 require("debian.menu")
 
-require("myrequire")
+--require("myrequire")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
