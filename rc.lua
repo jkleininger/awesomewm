@@ -3,6 +3,7 @@ require("awful.autofocus")
 require("awful.rules")
 require("beautiful")
 require("naughty")
+require("vicious")
 
 require("debian.menu")
 
@@ -12,13 +13,12 @@ require("autorun")
 
 modkey = "Mod4"
 
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+beautiful.init("/home/user/.config/awesome/zenburn/theme.lua")
 
 terminal = "konsole"
 editor = "nano"
 editor_cmd = terminal .. " -e " .. editor
 
--- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
     awful.layout.suit.floating,
@@ -26,28 +26,21 @@ layouts =
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
 }
--- }}}
 
--- {{{ Tags
--- Define a tag table which hold all screen tags.
-tags = {}
-for s = 1, screen.count() do
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
-end
--- }}}
-
+ tags = {
+   names  = { "01", "02", "03", "04", "05" },
+   layout = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[1]
+ }}
+ for s = 1, screen.count() do
+     tags[s] = awful.tag(tags.names, s, tags.layout)
+ end
+ -- }}}
 
 
 require("menu")
 require("bar")
 require("mouse")
 require("keys")
-
-
-
-
-
-
 
 
 -- {{{ Rules

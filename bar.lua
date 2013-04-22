@@ -2,6 +2,7 @@
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
 
+
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
@@ -81,7 +82,7 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
-        s == 1 and mysystray or nil,
+	s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
     }
