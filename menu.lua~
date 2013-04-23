@@ -4,7 +4,6 @@
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "edit configs", geditor .. " -n /home/user/.config/awesome/*.lua" },
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }

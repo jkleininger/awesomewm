@@ -10,8 +10,8 @@ require("debian.menu")
 require("errorhandler")
 require("autorun")
 
-terminal      = "konsole"
 modkey        = "Mod4"
+terminal      = "konsole"
 editor        = "nano"
 editor_cmd    = terminal .. " -e " .. editor
 browser       = "/usr/share/iron/iron"

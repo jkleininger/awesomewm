@@ -2,22 +2,25 @@ require("awful")
 require("awful.autofocus")
 require("awful.rules")
 require("beautiful")
-require("naughty")
-require("vicious")
+--require("naughty")
+--require("vicious")
 
 require("debian.menu")
 
 require("errorhandler")
 require("autorun")
 
+mytheme       = "zenburn"
+
 modkey        = "Mod4"
 terminal      = "konsole"
 editor        = "nano"
 editor_cmd    = terminal .. " -e " .. editor
+geditor       = "kate"
 browser       = "/usr/share/iron/iron"
 fm            = "dolphin"
 
-beautiful.init("/home/user/.config/awesome/zenburn/theme.lua")
+beautiful.init("/home/user/.config/awesome/" .. mytheme .. "/theme.lua")
 
 layouts =
 {
