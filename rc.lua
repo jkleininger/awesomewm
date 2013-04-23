@@ -1,9 +1,9 @@
-require("awful")
+awful = require("awful")
+awful.rules = require("awful.rules")
 require("awful.autofocus")
-require("awful.rules")
-require("beautiful")
---require("naughty")
---require("vicious")
+beautiful = require("beautiful")
+
+wibox = require("wibox")
 
 require("debian.menu")
 
