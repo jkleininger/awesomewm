@@ -24,8 +24,8 @@ beautiful.init("/home/user/.config/awesome/" .. mytheme .. "/theme.lua")
 
 layouts =
 {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
+    awful.layout.suit.floating,
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
 }

@@ -4,7 +4,9 @@
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "edit configs", geditor .. " -n /home/user/.config/awesome/*.lua" },
+--   { "maybe this", function () awful.util.spawn(geditor .. "`echo ~/.config/awesome/*.lua`") },
+   { "edit configs", geditor .. "`echo ~/.config/awesome/*.lua`" },
+
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
