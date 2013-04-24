@@ -12,6 +12,7 @@ require("autorun")
 
 mytheme       = "zenburn"
 
+userhome      = os.getenv("HOME")
 modkey        = "Mod4"
 terminal      = "xterm"
 editor        = "nano"
@@ -19,6 +20,7 @@ editor_cmd    = terminal .. " -e " .. editor
 geditor       = "kate"
 browser       = "/usr/share/iron/iron"
 fm            = "dolphin"
+locker        = userhome .. "/.config/awesome/lockit"
 
 beautiful.init("/home/user/.config/awesome/" .. mytheme .. "/theme.lua")
 

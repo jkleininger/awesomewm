@@ -1,7 +1,7 @@
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "b",      function () awful.util.spawn(browser)                end),
     awful.key({ modkey,           }, "e",      function () awful.util.spawn(fm)                     end),
-    awful.key({ modkey,           }, "l",      function () awful.util.spawn("lockit")               end),
+    awful.key({ modkey,           }, "l",      function () awful.util.spawn(locker)                 end),
     awful.key({ modkey,           }, "w",      function () mymainmenu:show({keygrabber=true})       end),
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal)               end),
 
