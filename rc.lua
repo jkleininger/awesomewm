@@ -13,7 +13,7 @@ require("autorun")
 mytheme       = "zenburn"
 
 modkey        = "Mod4"
-terminal      = "konsole"
+terminal      = "xterm"
 editor        = "nano"
 editor_cmd    = terminal .. " -e " .. editor
 geditor       = "kate"
@@ -25,9 +25,10 @@ beautiful.init("/home/user/.config/awesome/" .. mytheme .. "/theme.lua")
 layouts =
 {
     awful.layout.suit.tile,
-    awful.layout.suit.floating,
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
+    awful.layout.suit.tile.top,
+    awful.layout.suit.floating,
 }
 
 require("tags")

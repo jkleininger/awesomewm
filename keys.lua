@@ -14,6 +14,7 @@ globalkeys = awful.util.table.join(
             awful.client.focus.byidx( 1)
             if client.focus then client.focus:raise() end
         end),
+    awful.key({ modkey, "Shift"   }, "Tab", function () awful.client.swap.byidx(  1)    end),
 
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
