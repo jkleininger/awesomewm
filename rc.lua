@@ -20,7 +20,7 @@ editor_cmd    = terminal .. " -e " .. editor
 geditor       = "kate"
 browser       = "/usr/share/iron/iron"
 fm            = "dolphin"
-locker        = userhome .. "/.config/awesome/lockit"
+locker        = userhome .. "/.config/awesome/scripts/lockit"
 
 beautiful.init("/home/user/.config/awesome/" .. mytheme .. "/theme.lua")
 
