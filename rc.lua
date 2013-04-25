@@ -18,8 +18,8 @@ terminal      = "xterm"
 editor        = "nano"
 editor_cmd    = terminal .. " -e " .. editor
 geditor       = "kate"
-browser       = "/usr/share/iron/iron"
-fm            = "dolphin"
+browser       = "luakit"
+fm            = "thunar"
 locker        = userhome .. "/.config/awesome/scripts/lockit"
 
 beautiful.init("/home/user/.config/awesome/" .. mytheme .. "/theme.lua")
