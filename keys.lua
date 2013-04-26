@@ -4,6 +4,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "l",      function () awful.util.spawn(locker)                 end),
     awful.key({ modkey,           }, "w",      function () mymainmenu:show({keygrabber=true})       end),
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal)               end),
+    awful.key({ modkey,           }, "t",      function () awful.util.spawn(tptoggle)               end),
 
     awful.key({                   }, "#122",   function () awful.util.spawn("amixer set Master 2-") end),
     awful.key({                   }, "#123",   function () awful.util.spawn("amixer set Master 2+") end),

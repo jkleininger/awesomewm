@@ -1,8 +1,7 @@
 autorun = true
 autorunApps = 
 { 
-   "run_once xfce4-power-manager",
-   "run_once synaptiks",
+   "xfce4-power-manager",
    "xcompmgr -cF &",
    "nitrogen --restore &",
 }
