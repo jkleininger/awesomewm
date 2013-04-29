@@ -95,4 +95,3 @@ for s = 1, screen.count() do
 
     mywibox[s]:set_widget(layout)
 end
-
