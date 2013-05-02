@@ -29,7 +29,6 @@ layouts =
 {
     awful.layout.suit.tile,
     awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
     awful.layout.suit.tile.top,
     awful.layout.suit.floating,
 }
