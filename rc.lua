@@ -19,7 +19,8 @@ editor_cmd    = terminal .. " -e " .. editor
 geditor       = "gvim"
 browser       = "firefox"
 fm            = "thunar"
-locker        = userhome .. "/.config/awesome/scripts/lockit"
+locker        = scripts .. "lockit"
+suspender     = scripts .. "lock-and-suspend"
 tptoggle      = scripts .. "tp-toggle"
 
 beautiful.init("/home/user/.config/awesome/" .. mytheme .. "/theme.lua")
