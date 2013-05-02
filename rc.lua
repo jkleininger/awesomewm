@@ -5,8 +5,6 @@ beautiful = require("beautiful")
 
 wibox = require("wibox")
 
-require("debian.menu")
-
 require("errorhandler")
 require("autorun")
 
@@ -16,9 +14,9 @@ userhome      = os.getenv("HOME")
 scripts       = userhome .. "/.config/awesome/scripts/"
 modkey        = "Mod4"
 terminal      = "xterm"
-editor        = "nano"
+editor        = "vim"
 editor_cmd    = terminal .. " -e " .. editor
-geditor       = "kate"
+geditor       = "gvim"
 browser       = "firefox"
 fm            = "thunar"
 locker        = userhome .. "/.config/awesome/scripts/lockit"
